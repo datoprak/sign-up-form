@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -55,13 +55,95 @@ body {
   transform: translate(-50%);
   color: white;
   opacity: 0.5;
+  font-size: 0.75rem;
 }
 
 .shoutout > a {
   color: white;
   opacity: 0.5;
+  font-size: 0.75rem;
 }
 
 .content-sidebar {
   width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 64px 64px 32px 64px;
+  background-color: rgb(213, 236, 236);
+}
+
+.header > p,
+em {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.form-element {
+  padding-left: 48px;
+}
+
+.form-element > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+form {
+  display: flex;
+  gap: 256px;
+  justify-content: flex-start;
+}
+
+form > section {
+  height: 100%;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.6rem;
+  margin-bottom: 2px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+input {
+  margin-bottom: 16px;
+  padding: 2px 8px;
+}
+
+.cta {
+  background-color: rgb(213, 236, 236);
+  padding: 64px 48px;
+}
+
+button {
+  padding: 16px 64px;
+  background-color: rgb(98, 199, 194);
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.cta > p,
+p > a {
+  margin-top: 16px;
+  font-size: 1.2rem;
+}
+
+p > a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(51, 109, 106);
 }
