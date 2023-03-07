@@ -8,5 +8,54 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="image-sidebar">
+      <img src="images/benjamin-suter-CgoRzWX4CDg-unsplash.jpg" alt="" />
+      <div class="logo">
+        <img src="images/odin-lined.png" alt="the odin project logo" />
+        <div class="logo-text">DAT</div>
+      </div>
+      <div class="shoutout">
+        Photo by
+        <a
+          href="https://unsplash.com/@benjaminjsuter?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Benjamin Suter</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/CgoRzWX4CDg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </div>
+    </div>
+    <div class="content-sidebar">
+      <div class="header">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepeset dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="post">
+        <legend>Let's do this!</legend>
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" id="first-name" name="first-name" />
+        <label for="last-name">LAST NAME</label>
+        <input type="text" id="last-name" name="last-name" />
+        <label for="email">EMAIL</label>
+        <input type="email" id="email" name="email" />
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" />
+        <label for="password2">CONFIRM PASSWORD</label>
+        <input type="password" id="password2" name="password2" />
+      </form>
+      <div class="cta">
+        <button type="submit" class="create-account">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </div>
+  </body>
 </html>
