@@ -41,20 +41,79 @@
         <p>Let's do this!</p>
         <form action="post">
           <section>
-            <label for="first-name">FIRST NAME</label>
-            <input type="text" id="first-name" name="first-name" required />
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email" required />
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password" required />
+            <div class="name-container">
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                minlength="2"
+                placeholder="FIRST NAME *"
+              />
+              <label for="first-name" data-help="Min 2 characters"
+                >FIRST NAME</label
+              >
+            </div>
+            <div class="email-container">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="EMAIL *"
+              />
+              <label for="email" data-help="example@email.com">EMAIL</label>
+            </div>
+            <div class="password-container">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                minlength="8"
+                placeholder="PASSWORD *"
+              />
+              <label for="password" data-help="Min 8 characters"
+                >PASSWORD</label
+              >
+            </div>
           </section>
           <section>
-            <label for="last-name">LAST NAME</label>
-            <input type="text" id="last-name" name="last-name" required />
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" name="phone" />
-            <label for="password2">CONFIRM PASSWORD</label>
-            <input type="password" id="password2" name="password2" required />
+            <div class="last-name-container">
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                minlength="2"
+                placeholder="LAST NAME *"
+              />
+              <label for="last-name" data-help="Min 2 characters"
+                >LAST NAME</label
+              >
+            </div>
+            <div class="phone-container">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="PHONE NUMBER"
+              />
+              <label for="phone">PHONE NUMBER</label>
+            </div>
+            <div class="password2-container">
+              <input
+                type="password"
+                id="password2"
+                name="password2"
+                required
+                minlength="8"
+                placeholder="CONFIRM PASSWORD *"
+              />
+              <label for="password2" data-help="Passwords have to match"
+                >CONFIRM PASSWORD</label
+              >
+            </div>
           </section>
         </form>
       </div>
