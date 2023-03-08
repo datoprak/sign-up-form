@@ -72,8 +72,11 @@
                 required
                 minlength="8"
                 placeholder="PASSWORD *"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
               />
-              <label for="password" data-help="Min 8 characters"
+              <label
+                for="password"
+                data-help="Min 8 characters, at least one letter and one number"
                 >PASSWORD</label
               >
             </div>
@@ -109,6 +112,7 @@
                 required
                 minlength="8"
                 placeholder="CONFIRM PASSWORD *"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
               />
               <label for="password2" data-help="Passwords have to match"
                 >CONFIRM PASSWORD</label
